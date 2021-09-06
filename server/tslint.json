@@ -1,0 +1,28 @@
+{
+  "extends": ["tslint-config-prettier"],
+  "rules": {
+    "quotemark": [true, "single"],
+    "curly": [true, "ignore-same-line"],
+    "no-consecutive-blank-lines": [true, 2],
+    "max-line-length": {
+      "options": { "limit": 200 },
+      "severity": "warn"
+    },
+    "deprecation": true,
+    "prefer-const": true,
+    "ordered-imports": true,
+    "prefer-for-of": true,
+    "no-return-await": true,
+    "no-var-keyword": true,
+    "await-promise": [true, "Bluebird", "RequestPromise"],
+    "indent": [true, "spaces", 2],
+    "prettier": [
+      true,
+      {
+        "printWidth": 180
+      }
+    ],
+    "semicolon": [true, "always"],
+    "align": [true, "parameters", "statements"]
+  }
+}
