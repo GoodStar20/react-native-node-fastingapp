@@ -57,7 +57,7 @@ const UserList = () => {
 
   useEffect(() => {
     const unsubscribe = navigation.addListener('focus', () => {
-      dispatch(getAllUsers(sort.key, currentPage));
+      dispatch(getAllUsers(sort, currentPage));
     });
     return unsubscribe;
   }, [navigation]);
